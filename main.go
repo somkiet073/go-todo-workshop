@@ -8,6 +8,7 @@ import (
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin" // add import github.com/gin-gonic/gin
+	// "github.com/go-sql-driver/mysql"
 )
 
 func main() {
