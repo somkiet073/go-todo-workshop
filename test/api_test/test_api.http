@@ -1,10 +1,10 @@
 
 @base_url = http://localhost:8080
 @getall_api = {{base_url}}/
-@get_api = {{base_url}}/gettodo?id=1
+@get_api = {{base_url}}/gettodo?id=2
 @posts_api = {{base_url}}/
-@puts_api = {{base_url}}/12
-@dels_api = {{base_url}}/12
+@puts_api = {{base_url}}/3
+@dels_api = {{base_url}}/2
 
 
 ###
@@ -16,14 +16,18 @@ POST {{posts_api}} HTTP/1.1
 Content-Type: application/json
 
 {
-    "test":"x"
+    "Username":"admin4",
+    "Password":"123445555",
+    "Fullname":"admin test4"
 }
 ###
 PUT {{puts_api}} HTTP/1.1
 Content-Type: application/json
 
 {
-    "test":"x"
+    "Username":"admin3",
+    "Password":"4321",
+    "Fullname":"admin test3"
 }
 ###
 DELETE {{dels_api}} HTTP/1.1
